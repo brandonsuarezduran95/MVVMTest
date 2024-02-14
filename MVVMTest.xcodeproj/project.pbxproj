@@ -18,6 +18,10 @@
 		9913D10E2B76604600550B1A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913D10D2B76604600550B1A /* Model.swift */; };
 		9913D1102B790CA500550B1A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913D10F2B790CA500550B1A /* SecondViewController.swift */; };
 		9913D1142B790D6C00550B1A /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913D1132B790D6C00550B1A /* SecondViewModel.swift */; };
+		9913D1162B7A3BDF00550B1A /* MVVMSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913D1152B7A3BDF00550B1A /* MVVMSwiftUIView.swift */; };
+		9913D11A2B7BCCC000550B1A /* MVVMSwiftUIView + ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913D1192B7BCCC000550B1A /* MVVMSwiftUIView + ViewModel.swift */; };
+		9913D11C2B7C081900550B1A /* CombineSwiftUIMVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913D11B2B7C081900550B1A /* CombineSwiftUIMVVM.swift */; };
+		9913D11F2B7C084000550B1A /* CombineSwiftUIMVVM + ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913D11E2B7C084000550B1A /* CombineSwiftUIMVVM + ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		9913D10D2B76604600550B1A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		9913D10F2B790CA500550B1A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9913D1132B790D6C00550B1A /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
+		9913D1152B7A3BDF00550B1A /* MVVMSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSwiftUIView.swift; sourceTree = "<group>"; };
+		9913D1192B7BCCC000550B1A /* MVVMSwiftUIView + ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MVVMSwiftUIView + ViewModel.swift"; sourceTree = "<group>"; };
+		9913D11B2B7C081900550B1A /* CombineSwiftUIMVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineSwiftUIMVVM.swift; sourceTree = "<group>"; };
+		9913D11E2B7C084000550B1A /* CombineSwiftUIMVVM + ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CombineSwiftUIMVVM + ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 		9913D0F42B765CF500550B1A /* MVVMTest */ = {
 			isa = PBXGroup;
 			children = (
+				9913D1172B7BCC9B00550B1A /* SwiftUIMVVM */,
 				9913D1122B790D4D00550B1A /* Combine MVVM */,
 				9913D1112B790D3F00550B1A /* CallBack */,
 				9913D0F52B765CF500550B1A /* AppDelegate.swift */,
@@ -96,6 +105,25 @@
 				9913D1132B790D6C00550B1A /* SecondViewModel.swift */,
 			);
 			path = "Combine MVVM";
+			sourceTree = "<group>";
+		};
+		9913D1172B7BCC9B00550B1A /* SwiftUIMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				9913D11D2B7C082200550B1A /* Combine */,
+				9913D1152B7A3BDF00550B1A /* MVVMSwiftUIView.swift */,
+				9913D1192B7BCCC000550B1A /* MVVMSwiftUIView + ViewModel.swift */,
+			);
+			path = SwiftUIMVVM;
+			sourceTree = "<group>";
+		};
+		9913D11D2B7C082200550B1A /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				9913D11B2B7C081900550B1A /* CombineSwiftUIMVVM.swift */,
+				9913D11E2B7C084000550B1A /* CombineSwiftUIMVVM + ViewModel.swift */,
+			);
+			path = Combine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +198,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9913D1142B790D6C00550B1A /* SecondViewModel.swift in Sources */,
+				9913D11C2B7C081900550B1A /* CombineSwiftUIMVVM.swift in Sources */,
 				9913D0FA2B765CF500550B1A /* ViewController.swift in Sources */,
+				9913D1162B7A3BDF00550B1A /* MVVMSwiftUIView.swift in Sources */,
+				9913D11F2B7C084000550B1A /* CombineSwiftUIMVVM + ViewModel.swift in Sources */,
 				9913D0F62B765CF500550B1A /* AppDelegate.swift in Sources */,
 				9913D10C2B76603000550B1A /* NetworkManager.swift in Sources */,
+				9913D11A2B7BCCC000550B1A /* MVVMSwiftUIView + ViewModel.swift in Sources */,
 				9913D10E2B76604600550B1A /* Model.swift in Sources */,
 				9913D1102B790CA500550B1A /* SecondViewController.swift in Sources */,
 				9913D10A2B76600E00550B1A /* ViewModel.swift in Sources */,

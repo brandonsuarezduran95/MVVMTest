@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import SwiftUI
 
 class SecondViewController: UIViewController {
     
@@ -25,9 +26,11 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupController()
+        
         viewModel.$dataSource.sink { [unowned self] newData in
             self.dataSource = newData
         }.store(in: &cancellables)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,6 +46,7 @@ extension SecondViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         setupLabel()
         setupTableView()
+        addButton()
     }
     
     func setupLabel() {
@@ -72,6 +76,16 @@ extension SecondViewController {
             table.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             table.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor)
         ])
+    }
+    
+    func addButton() {
+        let action = UIAction { [unowned self] _ in
+            let swiftUIView = MVVMSwiftUIView()
+            let hostingController = UIHostingController(rootView: swiftUIView)
+            self.present(hostingController, animated: true)
+        }
+        let barButton = UIBarButtonItem(systemItem: .add, primaryAction: action)
+        navigationItem.rightBarButtonItem = barButton
     }
 }
 
